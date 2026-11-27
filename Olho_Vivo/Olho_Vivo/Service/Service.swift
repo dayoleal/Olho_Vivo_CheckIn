@@ -12,7 +12,6 @@ class Service {
     private var decoder = JSONDecoder()
     private var base: String = "https://api.olhovivo.sptrans.com.br/v2.1/"
     
-    // Authentication
     func auth(key: String) async throws -> Bool {
         let endPoint = base + "Login/Autenticar?token=" + key
                     
